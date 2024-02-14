@@ -4,6 +4,7 @@ import re
 import csv
 from discord.ext import commands, tasks
 from bs4 import BeautifulSoup
+from env import BOT_TOKEN
 
 intents = discord.Intents.default()
 bot = commands.Bot(command_prefix="!", intents=intents)
@@ -49,4 +50,4 @@ if __name__ == "__main__":
 #     print('Esperando a que el bot esté listo...')
 #     await bot.wait_until_ready()
 
-# bot.run('MTEwOTY1MTA5NTAyMzc4NDA1Ng.GeujTB.gcHxmYk9MN-beFPWbnfWthlRGgn136v2MezYWw')
+# bot.run(BOT_TOKEN)
