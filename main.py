@@ -59,8 +59,6 @@ async def scheduledCheck():
       if lastCap and lastCap > manga['lastCapRegistered']:
         await channel.send(f'Nuevo capitulo de {manga["manga"]}: {lastCap}')
         manga['lastCapRegistered'] = lastCap
-      else: 
-        await channel.send('no cap')
       updateCSV(mangas)
 
 
