@@ -47,7 +47,7 @@ async def on_ready():
     print(f'{bot.user} has connected to Discord!')
     scheduledCheck.start()
 
-@tasks.loop(minutes=1)
+@tasks.loop(hours=2)
 async def scheduledCheck():
   channel = bot.get_channel(int(CHANNEL_ID))
   if channel:
